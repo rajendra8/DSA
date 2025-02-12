@@ -2,7 +2,7 @@ package com.mobile.appium;
 
 public class Charactorcount {
         public static void main(String[] args) {
-            String input = "rajendra";
+            String input = "rajendra sahu";
             countCharacterOccurrences(input);
         }
 
