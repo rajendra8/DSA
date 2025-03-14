@@ -3,7 +3,8 @@ package com.mobile.appium;
 public class Charactorcount {
         public static void main(String[] args) {
             String input = "rajendra sahu";
-            countCharacterOccurrences(input);
+           // countCharacterOccurrences(input);
+            duplicate();
         }
 
         public static void countCharacterOccurrences(String str) {
@@ -22,5 +23,33 @@ public class Charactorcount {
                 }
             }
         }
+
+    public static void duplicate(){
+        String input= "I am am doing doing testing testing";
+        String[] str="I am am doing doing testing testing".split(" ");
+        int count;
+        for(int i=0; i<str.length;i++){
+
+            for(int j=0;j<str.length;j++){
+                if(str[i]==str[j]){
+                    System.out.println("duplicate string : " +str[j]);
+                }
+            }
+        }
+
+
+        for(int i=0; i<input.length();i++){
+
+            for(int j=0;j<input.length();j++){
+                if(input.charAt(i)==input.charAt(j)){
+                    System.out.print("==================");
+                    System.out.print("duplicate char: "+ input.charAt(j));
+
+                }
+
+            }
+        }
+
+    }
     }
 
