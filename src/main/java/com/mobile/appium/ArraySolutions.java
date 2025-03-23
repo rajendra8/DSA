@@ -32,7 +32,17 @@ public class ArraySolutions {
 
        
     }
+// 1. Find the maximum element in an array.
 
+    public void maxNumber(){
+       int  input []= {2,21,32,43,23,54,3,87};
+
+        for (int i = 0; i < input.length; i++) {
+            if(input==null || input.length==0){
+               return;
+            }
+        }
+    }
 
      public static void main(String[] args) {
         convertDecimalToBinary();
