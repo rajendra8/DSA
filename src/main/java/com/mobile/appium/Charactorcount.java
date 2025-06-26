@@ -1,26 +1,38 @@
 package com.mobile.appium;
 
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
 public class Charactorcount {
-        public static void main(String[] args) {
-            String input = "rajendra sahu";
-            countCharacterOccurrences(input);
+    public static void main(String[] args) {
+        String input = "rajendra sahu";
+        countCharacterOccurrences(input);
+    }
+
+    public static void countCharacterOccurrences(String str) {
+        // Assuming the input is ASCII characters only
+        int[] charCount = new int[256]; // Array to store the count of each character
+
+        // Iterate through the string and count each character
+        for (int i = 0; i < str.length(); i++) {
+            charCount[str.charAt(i)]++;
         }
 
-        public static void countCharacterOccurrences(String str) {
-            // Assuming the input is ASCII characters only
-            int[] charCount = new int[256]; // Array to store the count of each character
-
-            // Iterate through the string and count each character
-            for (int i = 0; i < str.length(); i++) {
-                 charCount[str.charAt(i)]++;
-            }
-
-            // Display the counts for each character
-            for (int i = 0; i < 256; i++) {
-                if (charCount[i] > 0) {
-                    System.out.println((char) i + " : " + charCount[i]);
-                }
+        // Display the counts for each character
+        for (int i = 0; i < 256; i++) {
+            if (charCount[i] > 0) {
+                System.out.println((char) i + " : " + charCount[i]);
             }
         }
     }
+
+    public void countz_eachRepeat() {
+        List<Integer> list = Arrays.asList(1, 2, 3, 6, 4, 7, 44, 3, 9);
+        int[] outputArray = new int[256];
+
+
+    }
+}
+
 

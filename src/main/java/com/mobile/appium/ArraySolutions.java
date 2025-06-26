@@ -13,6 +13,8 @@ public class ArraySolutions {
      *
      * Steps:
      * devide with 2 store the reminder at the end reverse the reminders
+     *
+     * reminder=23%2
      */
 
 
@@ -29,8 +31,6 @@ public class ArraySolutions {
         }
         System.out.print(result);
 
-
-       
     }
 
 
