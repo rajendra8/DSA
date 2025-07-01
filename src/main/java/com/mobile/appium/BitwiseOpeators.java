@@ -91,7 +91,7 @@ public class BitwiseOpeators {
         while (n > 0){
           int  lastdigit = n%10;//moduler
            if(lastdigit==1){
-               result=result + (int)Math.pow(2,index);
+             //  result=result + (int)Math.pow(2,index);
            }
             n=n/10;
             System.out.println("n :"+n);
@@ -158,11 +158,11 @@ public static void complementOfBase10(){
         }
     System.out.println( (~n) & mask);
 }
-
+/*
     public static boolean isPrimeNumber(int num){
 
         boolean isPrime=true;
-       double sqrt= Math.sqrt(num);
+      // double sqrt= Math.sqrt(num);
        // System.out.println(sqrt);
       //  for(int i=2;i<num;i++){}  //TC=O(n)
         for (int i = 2; i <=sqrt ; i++) { //TC log(n)
@@ -193,7 +193,7 @@ public static void mathFunctions(){
      *
      * @param
      */
-
+/*
     public static boolean countAllPrime(int num){
 
         int count=0;
@@ -208,6 +208,7 @@ public static void mathFunctions(){
         System.out.println("total prime number : " + count);
         return true;
     }
+*/
 
     /**
      * Factorial n!
@@ -227,7 +228,7 @@ public static void mathFunctions(){
      * fun(n){
      *     fun(n-1)
      * }
-     * @param args
+     * @param
      */
 
 
@@ -261,4 +262,5 @@ public static void mathFunctions(){
       //  System.out.println(result);
 
     }
+
 }
