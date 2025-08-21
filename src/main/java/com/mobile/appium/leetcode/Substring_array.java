@@ -36,6 +36,17 @@ public class Substring_array {
         }
     }
 
+
+    @Test
+    public void test(){
+        String input="abc";
+        for (int i = 0; i < input.length(); i++) {
+            for (int j = i; j <input.length() ; j++) {
+                System.out.println(input.substring(i,j+1));
+            }
+        }
+    }
+
 }
 /**
  * This uses nested loops to define the start and end of each substring:

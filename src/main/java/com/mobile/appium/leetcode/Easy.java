@@ -2,6 +2,9 @@ package com.mobile.appium.leetcode;
 
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Easy {
 
     /***
@@ -36,4 +39,10 @@ public class Easy {
             System.out.print(a);
         }
     }
+
+    /**
+     * Input: "aabcccccaaa" → Output: "a2b1c5a3"
+     */
+
+
 }

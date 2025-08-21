@@ -40,13 +40,15 @@ public void findalfaNumericNameWithItsCount(String str){
         }
 
        // Pattern pattern=Pattern.compile("[\\d+]");
-        Pattern pattern=Pattern.compile("\\b\\w+\\b");
+       // Pattern pattern=Pattern.compile("\\b\\w+\\b");
+        Pattern pattern=Pattern.compile("\\d");
         Matcher matcher=pattern.matcher(str);
 
         Map <String,Integer>map=new HashMap<>();
 
         while(matcher.find()){
         String result= matcher.group();
+        int count= matcher.groupCount();
             System.out.println(result);
 
         try{

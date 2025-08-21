@@ -5,6 +5,7 @@ public class Charactorcount {
             String input = "rajendra sahu";
            // countCharacterOccurrences(input);
             duplicate();
+
         }
 
 

@@ -18,7 +18,6 @@ public class sliding_window {
     public void max_sum_of_subarray_of_fixed_size(){
         int []arr={1, 4, 2, 10, 2, 3, 1, 0, 20};
         int k=3;
-
         if(arr.length<k || k==0){
             System.out.println("false");
         }
